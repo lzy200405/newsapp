@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- 夜间模式使用的颜色 -->
+        <item name="colorPrimary">@color/brown_500</item>
+        <item name="colorPrimaryDark">@color/brown_700</item>
+        <item name="colorAccent">@color/brown_200</item>
+
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+</resources>

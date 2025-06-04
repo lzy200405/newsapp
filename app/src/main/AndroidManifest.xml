@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.newsapp">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="newsapp"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!-- 启动页（控制登录状态和夜间模式） -->
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 登录页 -->
+        <activity android:name=".activity.LoginActivity" />
+
+        <!-- 主页面 -->
+        <activity android:name=".MainActivity" />
+
+        <!-- 新闻详情页 -->
+        <activity android:name=".activity.NewsDetailActivity" />
+
+        <!--注册页-->
+        <activity android:name=".activity.RegisterActivity" />
+
+
+    </application>
+</manifest>
